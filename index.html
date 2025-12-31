@@ -1,1 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yogesh Chandra Joshi — Portfolio</title>
+  <meta name="description" content="Portfolio of Yogesh Chandra Joshi — Diploma IT student. Skills, projects and contact information." />
 
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#0b5ed7;
+      --text:#111827;
+      --muted:#6b7280;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      padding:2rem;
+      display:flex;
+      justify-content:center;
+    }
+    .container{
+      max-width:900px;
+      width:100%;
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 6px 24px rgba(15,23,42,0.06);
+      padding:2rem;
+    }
+    header h1{
+      margin:.2rem 0 0;
+      font-size:1.75rem;
+    }
+    header p{
+      margin:.25rem 0 1rem;
+      color:var(--muted);
+    }
+    section{
+      margin-top:1.25rem;
+    }
+    ul{
+      padding-left:1.25rem;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:1rem;
+      margin-top:.5rem;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(11,94,215,0.04), transparent);
+      border-radius:8px;
+      padding:1rem;
+      border:1px solid rgba(11,94,215,0.06);
+    }
+    footer{
+      margin-top:1.5rem;
+      font-size:.95rem;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+    a.button{
+      background:var(--accent);
+      color:white;
+      padding:.5rem .75rem;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    @media (max-width:520px){
+      body{padding:1rem;}
+      header h1{font-size:1.4rem;}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <h1>Yogesh Chandra Joshi</h1>
+      <p>Diploma IT Student</p>
+    </header>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="grid" role="list">
+        <div class="card" role="listitem">
+          <strong>Frontend</strong>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="card" role="listitem">
+          <strong>Programming</strong>
+          <ul>
+            <li>Java</li>
+            <!-- add other languages/tools here -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul>
+        <li>Home Automation System — (brief description can go here)</li>
+        <li>College Management System — (brief description can go here)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
+      <p>If you'd like, replace the email above with your preferred contact address or add links to LinkedIn/GitHub.</p>
+    </section>
+
+    <footer>
+      <div>© Yogesh Chandra Joshi</div>
+      <div><a class="button" href="#contact-heading">Get in touch</a></div>
+    </footer>
+  </main>
+</body>
+</html>
